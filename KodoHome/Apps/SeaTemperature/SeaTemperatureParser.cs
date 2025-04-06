@@ -18,9 +18,9 @@ internal class SeaTemperatureParser
         var spanNode = temperatureNode.SelectSingleNode("span[@class='boldCast']");
         spanNode?.Remove();
 
-        var temperatureText = temperatureNode.InnerText.Trim();
+        var temperatureText = temperatureNode.InnerText.Trim(' ', '°', 'C');
 
-        if (decimal.TryParse(temperatureText.Split('°')[0], out var temperature))
+        if (decimal.TryParse(temperatureText, out var temperature))
         {
             seaTemperature = new Temperature(temperature);
             return true;
