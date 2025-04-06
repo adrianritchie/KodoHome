@@ -21,9 +21,18 @@ Import-Module .\Home-Assistant
 
 New-HomeAssistantSession -ip  $ip -port $port -token $token
 
-Invoke-HomeAssistantService -service HASSIO.ADDON_STOP -json $json
+Write-Host "Starting samba addon..."
+Invoke-HomeAssistantService -service HASSIO.ADDON_START -json $samba
 
+Write-Host "Stopping netdaemon addon..."
+Invoke-HomeAssistantService -service HASSIO.ADDON_STOP -json $netdaemon
+
+Write-Host "Publishing KodoHome..."
 Remove-Item -Recurse -Force \\homeassistant.local\config\netdaemon5\*
 dotnet publish -c Release .\KodoHome\KodoHome.csproj -o \\homeassistant.local\config\netdaemon5
 
-Invoke-HomeAssistantService -service HASSIO.ADDON_START -json $json
+Write-Host "Starting netdaemon addon..."
+Invoke-HomeAssistantService -service HASSIO.ADDON_START -json $netdaemon
+
+Write-Host "Stopping samba addon..."
+Invoke-HomeAssistantService -service HASSIO.ADDON_STOP -json $samba
