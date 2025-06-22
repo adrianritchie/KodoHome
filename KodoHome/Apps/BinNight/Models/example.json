@@ -1,0 +1,64 @@
+{
+    "addressid": "lbQ8CD9Lrvh3DFW8",
+    "services": {
+        "6PfyzpvPdssMW5C2": {
+            "serviceuid": "6PfyzpvPdssMW5C2",
+            "name": "Paper and cardboard",
+            "imageurl": "\/icon\/s\/xGVhn3HrifMCnQQJ\/a6aab6c7f99fbb9052c3c55896680ef4.png"
+        },
+        "erspYtc1Z42LySoB": {
+            "serviceuid": "erspYtc1Z42LySoB",
+            "name": "Residual waste",
+            "imageurl": "\/icon\/s\/D94b85wTs2RiZgxp\/165b595dfdd6f7746c5a2d216cbbe27b.png"
+        },
+        "sM9aYWTT5JxYhlDJ": {
+            "serviceuid": "sM9aYWTT5JxYhlDJ",
+            "name": "Glass",
+            "imageurl": "\/icon\/s\/NVVVjkvog9bliY9n\/8bfc83243436d49e2aa12097f21a133c.png"
+        },
+        "sRsQmhgNBG8CHsPa": {
+            "serviceuid": "sRsQmhgNBG8CHsPa",
+            "name": "Cans, plastics, cartons",
+            "imageurl": "\/icon\/s\/aQG7tSzCfcKTkh2s\/fd389dade44c29525b7b8e2c75db06c9.png"
+        },
+        "yaYsbG54DMkQBYMY": {
+            "serviceuid": "yaYsbG54DMkQBYMY",
+            "name": "Food",
+            "imageurl": "\/icon\/s\/2XwToeNwwrn2YiNz\/36e4b65c5c2fc4a13fd48fcc3f1d2116.png"
+        }
+    },
+    "servicedates": {
+        "2025-06-16": {
+            "date": "2025-06-16",
+            "services": {
+                "1": "6PfyzpvPdssMW5C2",
+                "0": "erspYtc1Z42LySoB",
+                "2": "yaYsbG54DMkQBYMY"
+            }
+        },
+        "2025-06-23": {
+            "date": "2025-06-23",
+            "services": {
+                "2": "sM9aYWTT5JxYhlDJ",
+                "1": "sRsQmhgNBG8CHsPa",
+                "0": "yaYsbG54DMkQBYMY"
+            }
+        },
+        "2025-06-30": {
+            "date": "2025-06-30",
+            "services": {
+                "1": "6PfyzpvPdssMW5C2",
+                "0": "erspYtc1Z42LySoB",
+                "2": "yaYsbG54DMkQBYMY"
+            }
+        },
+        "2025-07-07": {
+            "date": "2025-07-07",
+            "services": {
+                "2": "sM9aYWTT5JxYhlDJ",
+                "1": "sRsQmhgNBG8CHsPa",
+                "0": "yaYsbG54DMkQBYMY"
+            }
+        }
+    }
+}
